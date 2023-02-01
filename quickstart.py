@@ -50,7 +50,7 @@ def main():
             mail_ids = [i["id"] for i in mails["messages"]]
             label_body = {'ids': mail_ids}
 
-            deletion = gmail.messages().batchDelete(userId="me", body=label_body).execute()
+           # deletion = gmail.messages().batchDelete(userId="me", body=label_body).execute()
 
         '''for j, i in enumerate(mails["messages"]):
             print(j, "\n")
